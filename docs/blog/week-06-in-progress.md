@@ -5,7 +5,7 @@
 ## Contents
 
 1. [Introduction from documents to a managed project ](#1-Introduction-from-documents-to-a-managed-project)
-2. [Our project management tool YouTrack](2#-Our-project-management-tool-YouTrack)
+2. [Our project management tool youtrack](2#-Our-project-management-tool-youtrack)
 3. [Combining Scrum with RUP](#3-Combining-Scrum-with-RUP)
 4. [Sprint naming and history](#4-Sprint-naming-and-history)
 5. [Elaboration 1 what is on the sprint](#5-Elaboration-1-what-is-on-the-sprint)
@@ -24,7 +24,7 @@ During the first five weeks we worked mostly on documents: the project idea, the
 
 This week we move into **Elaboration**. By the midterm we need the Lifecycle Architecture Milestone: proof that our React / Node.js / PostgreSQL stack can carry the product. To get there we need more than good documents. We need to plan, track and measure the work. That is why Week 6 is about project management: a public Scrum board, RUP tags, time tracking, and a chain from the IDE to GitHub.
 
-## 2\. Our project management tool YouTrack
+## 2\. Our project managment tool youtrack
 
 The grading criteria ask for **YouTrack**, so we use YouTrack as our Scrum tool. Earlier we kept a light plan in GitHub Projects; that was useful for Week 2, but it does not give us the public board, RUP custom fields, burn-down and time reports this assignment needs. YouTrack does.
 
