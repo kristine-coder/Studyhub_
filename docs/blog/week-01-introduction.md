@@ -5,8 +5,12 @@
 You probably know the situation. It's Sunday evening, the group report is due on Monday, and somebody writes in the chat: "Wait, who was doing part three?" Nobody answers for an hour. Then three people answer at once, and all three of them thought it was someone else.
 
 We have been in that chat. More than once. That's where **StudyHub** comes from.
+## Contents
 
-## Project vision
+1. [Project vision](#1-Project vision)  
+
+
+## 1 Project vision
 
 | | |
 |---|---|
