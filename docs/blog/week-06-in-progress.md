@@ -8,7 +8,7 @@
 2. [Our project management tool: YouTrack](2#-Our-project-management-tool:-YouTrack)
 3. [Combining Scrum with RUP](#3-Combining-Scrum-with-RUP)
 4. [Sprint naming and history](#4-Sprint-naming-and-history)
-5. [Elaboration#1: what is on the sprint](#5-Elaboration#1:-what-is-on-the-sprint)
+5. [Elaboration 1 : what is on the sprint](#5-Elaboration-1:-what-is-on-the-sprint)
 6. [Time tracking](#6-Time-tracking)
 7. [Integration with the IDE and GitHub](#7-Integration-with-the-IDE-and-GitHub)
 8. [Dashboard and reports](#8-Dashboard-and-reports)
@@ -64,7 +64,7 @@ We do not need a perfect epic / story / subtask tree yet. We do need Elaboration
 
 Sprint **Elaboration#1** runs **11–18 Nov 2026**. The first burn-down is on our dashboard (link below).
 
-## 5\. Elaboration#1: what is on the sprint
+## 5\. Elaboration 1: what is on the sprint
 
 The first Elaboration sprint focuses on the technical foundation and on turning our two use cases into tracked work:
 
