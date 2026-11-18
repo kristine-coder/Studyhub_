@@ -7,14 +7,14 @@ You probably know the situation. It's Sunday evening, the group report is due on
 We have been in that chat. More than once. That's where **StudyHub** comes from.
 ## Contents
 
-1. [Project vision](#1-Projectvision)
-2. [The problem](#2-Theproblem)
-3. [What we are building](#3-Whatwearebuilding)
+1. [Project vision](#1-Project-vision)
+2. [The problem](#2-The-problem)
+3. [What we are building](#3-What-we-are-building)
 4. [Subsystems](#3-Subsystems)
-5. [Dependencies on outside systems](#5-Dependenciesonoutsidesystems)
+5. [Dependencies on outside systems](#5-Dependencies-on-out-side-systems)
 6. [Assumptions](#6-Assumptions)
-7. [What we are not Buildin](#7-WhatweareBuilding)
-8. [Who we are](#8-Whoweare)
+7. [What we are not Buildin](#7-What-we-are-Building)
+8. [Who we are](#8-Who-we-are)
 
 
 ## 1\. Project vision
