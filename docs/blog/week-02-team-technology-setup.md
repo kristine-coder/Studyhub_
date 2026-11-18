@@ -56,5 +56,4 @@ We plan and track the work in **GitHub Projects** in the same repository as the 
 Next week we write down exactly what StudyHub must do: our Software Requirements Specification and the overall use case diagram.
 
 ## Reflection on AI use
-
 For this week update our team used Cursor AI as an assistant to help structure the layout and refine the text for clarity. We also used it to summarize the reasoning behind our technical choices. All project management decisions, technology selections, and task distributions were made entirely by our team.
