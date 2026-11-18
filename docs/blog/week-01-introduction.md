@@ -11,7 +11,7 @@ We have been in that chat. More than once. That's where **StudyHub** comes from.
 2. [The problem](#2-The-problem)
 3. [What we are building](#3-What-we-are-building)
 4. [Subsystems](#3-Subsystems)
-5. [Dependencies on outside systems](#5-Dependencies-on-out-side-systems)
+5. [Dependencies on outside systems](#5-Dependencies-on-outside-systems)
 6. [Assumptions](#6-Assumptions)
 7. [What we are not Buildin](#7-What-we-are-Building)
 8. [Who we are](#8-Who-we-are)
