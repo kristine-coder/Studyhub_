@@ -84,5 +84,4 @@ We are three computer science exchange students at DHBW Karlsruhe:
 Next week we pick our **technology stack**, agree **roles**, and set up GitHub and the project board. That will be our Week 2 post.
 
 ## Reflection on AI use
-
 Because this is a new repository we created all new files and decided to storage each file under a specific name to make it easier to find everything. We also gathered with each other and kept our original ideas of our project, we didnt used AI on the git this week but we used Cursor AI to fix the theme on our wordpress page.
