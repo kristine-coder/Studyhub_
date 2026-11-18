@@ -2,13 +2,29 @@
 
 *By Ergens Hyso, Kristine Megrelishvili and Antonio Kanani*
 
-## Introduction: from documents to a managed project 
+## Contents
+
+1. [Introduction: from documents to a managed project ](#1-Introduction:-from-documents-to-a-managed-project)
+2. [Our project management tool: YouTrack](2#-Our-project-management-tool:-YouTrack)
+3. [Combining Scrum with RUP](#3-Combining-Scrum-with-RUP)
+4. [Sprint naming and history](#4-Sprint-naming-and-history)
+5. [Elaboration#1: what is on the sprint](#5-Elaboration#1:-what-is-on-the-sprint)
+6. [Time tracking](#6-Time-tracking)
+7. [Integration with the IDE and GitHub](#7-Integration-with-the-IDE-and-GitHub)
+8. [Dashboard and reports](#8-Dashboard-and-reports)
+9. [Proof we follow the method](9#-Proof-we-follow-the-method)
+10. [What is not expected yet](10#-What-is-not-expected-yet)
+11. [What’s next](11#-What’s-next)
+
+
+
+## 1\. Introduction: from documents to a managed project 
 
 During the first five weeks we worked mostly on documents: the project idea, the SRS, two use case specifications with activity diagrams, and Gherkin feature files with Cucumber tests. In RUP terms that was our **Inception** work. Its goal is to understand the scope and decide that StudyHub is worth building.
 
 This week we move into **Elaboration**. By the midterm we need the Lifecycle Architecture Milestone: proof that our React / Node.js / PostgreSQL stack can carry the product. To get there we need more than good documents. We need to plan, track and measure the work. That is why Week 6 is about project management: a public Scrum board, RUP tags, time tracking, and a chain from the IDE to GitHub.
 
-## Our project management tool: YouTrack
+## 2\. Our project management tool: YouTrack
 
 The grading criteria ask for **YouTrack**, so we use YouTrack as our Scrum tool. Earlier we kept a light plan in GitHub Projects; that was useful for Week 2, but it does not give us the public board, RUP custom fields, burn-down and time reports this assignment needs. YouTrack does.
 
@@ -20,7 +36,7 @@ We granted a read-only role (**Issue Reader**) so people outside the team can op
 
 Every issue will look like `STU-12`. That ID must appear in commit messages and pull request titles.
 
-## Combining Scrum with RUP
+## 3\. Combining Scrum with RUP
 
 Scrum tells us how to work in short iterations. RUP tells us what kind of work we are doing and in which phase we are. Every task on the board carries:
 
@@ -34,7 +50,7 @@ Every sprint task also has one **assignee** and an **Estimated time** value. Tas
 
 When a task is relevant to a use case we also keep the link clear (tag or parent user story), so midterm reports can group time by UC.
 
-## Sprint naming and history
+## 4\. Sprint naming and history
 
 Sprints are named after the RUP phase, as required:
 
@@ -48,7 +64,7 @@ We do not need a perfect epic / story / subtask tree yet. We do need Elaboration
 
 Sprint **Elaboration#1** runs **11–18 Nov 2026**. The first burn-down is on our dashboard (link below).
 
-## Elaboration#1: what is on the sprint
+## 5\. Elaboration#1: what is on the sprint
 
 The first Elaboration sprint focuses on the technical foundation and on turning our two use cases into tracked work:
 
@@ -74,7 +90,7 @@ Example issue fields (Phase / Workflow on the right):
 
 If the sprint looks overloaded for one person, we move unfinished work to Elaboration#2 instead of faking a green burn-down. Clean charts are not required yet; honest estimates and tags are.
 
-## Time tracking
+## 6\. Time tracking
 
 Estimating is only half of the work. We also log the time we actually spend, so we can compare estimates with reality and produce the midterm reports:
 
@@ -84,7 +100,7 @@ Estimating is only half of the work. We also log the time we actually spend, so 
 
 In YouTrack we enable the **In Progress Work Timer** workflow. Starting a task from the IDE starts the timer; finishing the task stores spent time on the issue.
 
-## Integration with the IDE and GitHub
+## 7\. Integration with the IDE and GitHub
 
 The goal is one chain:
 
@@ -107,7 +123,7 @@ The same commits appear on issue **STU-9** under **VCS changes**:
 
 ![STU-9 VCS changes in YouTrack](images/week-06/vcs-stu-9.png)
 
-## Dashboard and reports
+## 8\. Dashboard and reports
 
 We create a shared dashboard for Elaboration#1. It should include at least:
 
@@ -126,15 +142,15 @@ The dashboard is shared so All Users can view it:
 
 ![Sprint burndown for Elaboration#1](images/week-06/burndown.png)
 
-## Proof we follow the method
+## 9\. Proof we follow the method
 
 This post is the written proof. The live proof is the public YouTrack board: sprints named `Elaboration#…`, tasks with assignees and estimates, Phase / Workflow / UC tags, time spent, and commits that carry the issue ID.
 
-## What is not expected yet
+## 10\. What is not expected yet
 
 We do not need a perfect burn-down, and we do not need a full epic / story / subtask hierarchy. We do need the sprint, the assigned and estimated tasks, and the RUP tags.
 
-## What’s next
+## 11\. What’s next
 
 In Elaboration#2 we take the breakdown of *Create a task* and *Schedule meeting* and start the real implementation against the architecture we confirm this week.
 
