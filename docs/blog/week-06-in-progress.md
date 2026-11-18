@@ -4,8 +4,8 @@
 
 ## Contents
 
-1. [Introduction from documents to a managed project ](#1-Introduction:-from-documents-to-a-managed-project)
-2. [Our project management tool YouTrack](2#-Our-project-management-tool:-YouTrack)
+1. [Introduction from documents to a managed project ](#1-Introduction-from-documents-to-a-managed-project)
+2. [Our project management tool YouTrack](2#-Our-project-management-tool-YouTrack)
 3. [Combining Scrum with RUP](#3-Combining-Scrum-with-RUP)
 4. [Sprint naming and history](#4-Sprint-naming-and-history)
 5. [Elaboration 1 what is on the sprint](#5-Elaboration-1-what-is-on-the-sprint)
