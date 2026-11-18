@@ -11,8 +11,10 @@ This week we looked at testing. Our StudyHub use cases are now written as **Gher
 ## Contents
 
 1. [What is Gherkin and BDD?](#1-What-is-Gherkin-and-BDD?)
-2. [ Our two use cases](#2-Our-two-use-cases)
-3. [Running the tests](#3-Running-the-tests)
+2. [The feature files in our IDE](2#-The-feature-files-in-our-IDE)
+3. [Our two use cases](#2-Our-two-use-cases)
+4. [Running the tests](#3-Running-the-tests)
+
 
 
 ## 1\. What is Gherkin and BDD?
@@ -53,7 +55,7 @@ Feature: Schedule meeting
 
 Each line is connected to a small piece of code, a **step definition**. The sentence is the specification, the step definition is the test, and so the documentation always shows whether the requirement still works. It is living documentation.
 
-## The feature files in our IDE
+## 2\. The feature files in our IDE
 
 We installed the official Cucumber extension in our IDE. It highlights the Gherkin keywords in our feature files:
 
@@ -63,7 +65,7 @@ It also suggests steps from our step definitions while we type, so we reuse exis
 
 ![The IDE suggesting steps while typing in create_task.feature](../screenshots/autocomplete.png)
 
-## 2\. Our two use cases
+## 3\. Our two use cases
 
 For each use case we have a narration, an activity diagram and a feature file. The full details are in our use case specifications for [Create a task](../use-cases/create-task.md) and [Schedule meeting](../use-cases/schedule-meeting.md).
 
@@ -110,7 +112,7 @@ Scenario: No time works for everyone
 
 Our specification first only said that StudyHub shows the times "when most members are free". That is not exact enough for a test, so we added a business rule to the [specification](../use-cases/schedule-meeting.md#business-rules): StudyHub shows the times when the largest number of members are free, and how many of them that is.
 
-## 3\. Running the tests
+## 4\. Running the tests
 
 We use **CucumberJS** with Node.js. After `npm install`, this is the result of `npm test`:
 
