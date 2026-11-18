@@ -7,10 +7,17 @@ You probably know the situation. It's Sunday evening, the group report is due on
 We have been in that chat. More than once. That's where **StudyHub** comes from.
 ## Contents
 
-1. [Project vision](#1-Project vision)  
+1. [Project vision](#1-Projectvision)
+2. [The problem](#2-Theproblem)
+3. [What we are building](#3-Whatwearebuilding)
+4. [Subsystems](#3-Subsystems)
+5. [Dependencies on outside systems](#5-Dependenciesonoutsidesystems)
+6. [Assumptions](#6-Assumptions)
+7. [What we are not Buildin](#7-WhatweareBuilding)
+8. [Who we are](#8-Whoweare)
 
 
-## 1 Project vision
+## 1\. Project vision
 
 | | |
 |---|---|
@@ -20,17 +27,17 @@ We have been in that chat. More than once. That's where **StudyHub** comes from.
 
 StudyHub does **not** replace Moodle and does not grade anyone. It helps small groups organize themselves.
 
-## The problem
+## 2\. The problem
 
 Group work itself is fine. Organizing it is the painful part. Deadlines sit in Moodle, tasks live in someone's head, notes are split across Google Docs, WhatsApp and a photo of a whiteboard, and finding a meeting time takes twenty messages. By the time everything is sorted out, half the energy for the actual work is gone.
 
-## What we are building
+## 3\. What we are building
 
 In StudyHub you add your courses and deadlines, create a group with your teammates, and split the work into tasks. Every task has one owner, so "I thought you were doing it" is harder to use as an excuse. The dashboard shows what's due next across your courses and groups. When you need to meet, everyone enters when they are free and StudyHub suggests a time that works. Shared notes stay in one place instead of five apps.
 
 **Who it is for:** university students in project groups — basically people like us. No training needed; the first screen should make sense within ten seconds.
 
-## Subsystems
+## 4\. Subsystems
 
 We split the app into **six subsystems**. Each one is small enough for one person to own in the team, and together they cover the whole product. This keeps the project manageable for one semester.
 
@@ -47,14 +54,14 @@ We split the app into **six subsystems**. Each one is small enough for one perso
 | **Shared notes** | Notes the whole group can read and edit | One place for meeting notes and decisions |
 | **Notifications** | E-mail for sign-up, invitations, deadlines, tasks and meetings | Nobody has to chase the group by hand for every reminder |
 
-## Dependencies on outside systems
+## 5\. Dependencies on outside systems
 
 StudyHub is **stand-alone**: it does not connect to Moodle or other university systems. We only rely on:
 
 1. **E-mail service (SMTP)** — confirmations, group invitations and reminders.
 2. **The student's calendar app (optional)** — export of deadlines and meetings as an **.ics** file (e.g. Google Calendar, Outlook). We do not call Google or Microsoft APIs in the first release.
 
-## Assumptions
+## 6\. Assumptions
 
 Every project rests on a few guesses. Ours:
 
@@ -65,7 +72,7 @@ Every project rests on a few guesses. Ours:
 
 If one of these turns out to be wrong, we will adjust the design — and we will say so in a later blog post.
 
-## What we are not building (scope)
+## 7\. What we are not Building (scope)
 
 One semester goes by fast, so we decided early what to leave out:
 
@@ -75,7 +82,7 @@ One semester goes by fast, so we decided early what to leave out:
 
 More detail lives in our [Software Requirements Specification](../SRS.md) on GitHub.
 
-## Who we are
+## 8\. Who we are
 
 We are three computer science exchange students at DHBW Karlsruhe:
 
