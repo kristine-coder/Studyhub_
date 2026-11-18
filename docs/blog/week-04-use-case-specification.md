@@ -6,7 +6,7 @@
 
 1. [Where we are on the road](#1-Where-we-are-on-the-road)
 2. [The "throw it over the wall" test](#2-The-"throw-it-over-the-wall"-test)
-3. [A reminder: what makes a good use case](#3-A-reminder:-what-makes-a-good-use-case)
+3. [A reminder what makes a good use case](#3-A-reminder:-what-makes-a-good-use-case)
 4. [Not a waterfall](#4-Not-a-waterfall)
 5. [What a use case specification contains](#5-What-a-use-case-specification-contains)
 6. [Our two use case specifications](#6-Our-two-use-case-specifications)
