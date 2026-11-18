@@ -74,5 +74,4 @@ We start thinking about **testing the user interface**. Our specifications give 
 *Documents for this project live in our Git repository: the SRS, the use case diagram and the use case specifications are in the `docs/` folder.*
 
 ## Reflection on AI use
-
 Cursor AI helped us turn the two use cases into clearer step lists and suggested where an alternative flow was missing. The business rules, for example what happens when no meeting time works for everyone, came from our own discussion. We kept only the parts that still made sense after we read them out loud as a team.
