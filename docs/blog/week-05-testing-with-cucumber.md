@@ -8,7 +8,14 @@ This week we looked at testing. Our StudyHub use cases are now written as **Gher
 - [`features/schedule_meeting.feature`](https://github.com/kristine-coder/Studyhub_/blob/main/features/schedule_meeting.feature)
 - [Step definitions](https://github.com/kristine-coder/Studyhub_/tree/main/features/step_definitions)
 
-## What is Gherkin and BDD?
+## Contents
+
+1. [What is Gherkin and BDD?](#1-What-is-Gherkin-and-BDD?)
+2. [ Our two use cases](#2-Our-two-use-cases)
+3. [Running the tests](#3-Running-the-tests)
+
+
+## 1\. What is Gherkin and BDD?
 
 **BDD (behaviour-driven development)** means we describe what the software should do in plain language *before* we build it. **Gherkin** is the language for that. Everybody in the team can read it, including people who don't write code, and a tool such as Cucumber can run it as an automated test.
 
@@ -56,7 +63,7 @@ It also suggests steps from our step definitions while we type, so we reuse exis
 
 ![The IDE suggesting steps while typing in create_task.feature](../screenshots/autocomplete.png)
 
-## Our two use cases
+## 2\. Our two use cases
 
 For each use case we have a narration, an activity diagram and a feature file. The full details are in our use case specifications for [Create a task](../use-cases/create-task.md) and [Schedule meeting](../use-cases/schedule-meeting.md).
 
@@ -103,7 +110,7 @@ Scenario: No time works for everyone
 
 Our specification first only said that StudyHub shows the times "when most members are free". That is not exact enough for a test, so we added a business rule to the [specification](../use-cases/schedule-meeting.md#business-rules): StudyHub shows the times when the largest number of members are free, and how many of them that is.
 
-## Running the tests
+## 3\. Running the tests
 
 We use **CucumberJS** with Node.js. After `npm install`, this is the result of `npm test`:
 
