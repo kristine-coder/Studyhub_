@@ -6,10 +6,11 @@ Last week we split the work and chose how StudyHub will be built. This week we w
 
 ## Contents
 
-1. [Who does what](#1-Who-does-what)
-2. [How StudyHub will be built](#2-How-StudyHub-will-be-built)
-3. [How we work together](#3-How-we-work-together)
+1. [Choosing the scope for this semester](#1-Choosing-the-scope-for-this-semester)
+2. [The overall use case diagram](#2-The-overall-use-case-diagram)
+3. [What StudyHub will not do](#3-What-StudyHub-will-not-do)
 4. [Next week](#4-Next-week)
+   
 ## Our SRS
 
 Our [SRS](../SRS.md) follows the RUP template, with IEEE 830 as guidance. It has four parts:
@@ -19,7 +20,7 @@ Our [SRS](../SRS.md) follows the RUP template, with IEEE 830 as guidance. It has
 3. **Specific requirements:** what the system must do (functionality) and how well it must do it (usability, reliability, performance, supportability, design constraints, interfaces, licensing and standards).
 4. **Supporting information.**
 
-## Choosing the scope for this semester
+## 1\. Choosing the scope for this semester
 
 We can't build everything in one semester, so we gave every group of requirements a priority. The first release has everything marked *High*. *Medium* and *Low* come later if time allows.
 
@@ -35,7 +36,7 @@ We also wrote down the quality we expect, with numbers we can check later. Some 
 - **95 %** of pages and actions respond within **2 seconds**.
 - The interface works on phones from **360 px** wide and follows **WCAG 2.1 level AA**.
 
-## The overall use case diagram
+## 2\. The overall use case diagram
 
 ![StudyHub use case diagram](../diagrams/use-case-diagram.png)
 
@@ -46,11 +47,11 @@ The diagram shows **who** can do **what** in StudyHub:
 - **«include»** means one use case always uses another: *Schedule meeting* always includes *Find common meeting time*.
 - **«extend»** means optional extra behaviour: *Send reminders* extends *Manage tasks* and *Schedule meeting*, and *Export calendar* extends *View dashboard*.
 
-## What StudyHub will not do
+## 3\. What StudyHub will not do
 
 Writing the SRS also meant deciding what is out of scope. StudyHub is not a learning management system like Moodle, has no video calls and does no grading.
 
-## Next week
+## 4\. Next week
 
 The diagram only shows that a use case exists, not how it works. Next week we take two use cases (*Create a task* and *Schedule meeting*) and write a detailed specification for each.
 
