@@ -4,6 +4,12 @@
 
 Last week we split the work and chose how StudyHub will be built. This week we wrote down exactly **what** StudyHub must do. We did that in two documents: a Software Requirements Specification (SRS) and an overall use case diagram.
 
+## Contents
+
+1. [Who does what](#1-Who-does-what)
+2. [How StudyHub will be built](#2-How-StudyHub-will-be-built)
+3. [How we work together](#3-How-we-work-together)
+4. [Next week](#4-Next-week)
 ## Our SRS
 
 Our [SRS](../SRS.md) follows the RUP template, with IEEE 830 as guidance. It has four parts:
