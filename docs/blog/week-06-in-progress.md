@@ -139,5 +139,4 @@ We do not need a perfect burn-down, and we do not need a full epic / story / sub
 In Elaboration#2 we take the breakdown of *Create a task* and *Schedule meeting* and start the real implementation against the architecture we confirm this week.
 
 ## Reflection on AI use
-
 We used Cursor AI to turn the grading criteria and another team’s Week 6 structure into a StudyHub checklist. The choice of YouTrack, the sprint name Elaboration#1, the task list and who owns each task are team decisions. Board links, dashboard charts and toolchain screenshots in this post are from our real YouTrack project and GitHub commits.
