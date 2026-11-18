@@ -3,8 +3,15 @@
 *By Ergens Hyso, Kristine Megrelishvili and Antonio Kanani*
 
 Last week we introduced the idea behind StudyHub. This week we started turning the idea into a project: we split the work, chose how StudyHub will be built and set up our repository.
+## Contents
 
-## Who does what
+1. [Who does what](#1-Who-does-what)
+2. [How StudyHub will be built](#2-How-StudyHub-will-be-built)
+3. [How we work together](#3-How-we-work-together)
+4. [Next week](#4-Next-week)
+
+
+## 1\. Who does what
 
 | Team member | Responsibility | First work |
 | :---- | :---- | :---- |
@@ -14,7 +21,7 @@ Last week we introduced the idea behind StudyHub. This week we started turning t
 
 We checked these roles together. Ergens starts with architecture and code, Kristine with how people will use StudyHub and how we present the work, and Antonio with the data model and the day-to-day workflow of the team.
 
-## How StudyHub will be built
+## 2\. How StudyHub will be built
 
 StudyHub is a stand-alone web application with three parts:
 
@@ -39,7 +46,7 @@ For the first release we chose a small stack that we can finish in one semester:
 
 We keep the email service as SMTP only. No university systems and no extra APIs in the first release.
 
-## How we work together
+## 3\. How we work together
 
 We agreed on a few rules from the start:
 
@@ -51,7 +58,7 @@ We agreed on a few rules from the start:
 
 We plan and track the work in **GitHub Projects** in the same repository as the code. Issues and pull requests are linked to the board, so the plan and the code stay in one place. We meet about two or three times a week, in person when we can and online when we cannot, and we leave short notes after each meeting.
 
-## Next week
+## 4\. Next week
 
 Next week we write down exactly what StudyHub must do: our Software Requirements Specification and the overall use case diagram.
 
