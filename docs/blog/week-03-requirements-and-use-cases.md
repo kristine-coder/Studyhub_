@@ -49,5 +49,4 @@ Writing the SRS also meant deciding what is out of scope. StudyHub is not a lear
 The diagram only shows that a use case exists, not how it works. Next week we take two use cases (*Create a task* and *Schedule meeting*) and write a detailed specification for each.
 
 ## Reflection on AI use
-
 This week we used Cursor AI to help us tidy the SRS wording and to check that the use case diagram matched the text. The priorities, the quality goals and what we leave out of scope were decided by our team. We read every section again ourselves before we put it in the repository.
