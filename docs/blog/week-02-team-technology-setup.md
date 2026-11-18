@@ -3,6 +3,7 @@
 *By Ergens Hyso, Kristine Megrelishvili and Antonio Kanani*
 
 Last week we introduced the idea behind StudyHub. This week we started turning the idea into a project: we split the work, chose how StudyHub will be built and set up our repository.
+
 ## Contents
 
 1. [Who does what](#1-Who-does-what)
