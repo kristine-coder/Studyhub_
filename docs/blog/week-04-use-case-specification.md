@@ -6,7 +6,7 @@
 
 1. [Where we are on the road](#1-Where-we-are-on-the-road)
 2. [The "throw it over the wall" test](#2-The-"throw-it-over-the-wall"-test)
-3. [A reminder what makes a good use case](#3-A-reminder:-what-makes-a-good-use-case)
+3. [A reminder what makes a good use case](#3-A-reminder-what-makes-a-good-use-case)
 4. [Not a waterfall](#4-Not-a-waterfall)
 5. [What a use case specification contains](#5-What-a-use-case-specification-contains)
 6. [Our two use case specifications](#6-Our-two-use-case-specifications)
@@ -29,7 +29,7 @@ Our lecturer gave us a mental test. Imagine your development team sits in anothe
 
 Today the team on the other side may well be an AI, but the test is the same: **can someone else, or something else, build the feature from the text alone, without asking us a single question?** If the answer is no, the specification isn't finished.
 
-## 3\. A reminder: what makes a good use case
+## 3\. A reminder what makes a good use case
 
 - **Actors are roles, not people.** "Student" or "Group Owner", not "Kristine". Actors can be people, systems or devices.
 - **A use case is named as a goal:** a verb plus an object, like *Manage tasks* or *Schedule meeting*.
