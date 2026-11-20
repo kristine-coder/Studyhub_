@@ -1,0 +1,61 @@
+@startuml StudyHub Architectural UML
+!theme plain
+skinparam backgroundColor #FEFEFE
+skinparam componentStyle rectangle
+skinparam shadowing false
+skinparam defaultFontName Segoe UI
+skinparam ArrowColor #334155
+skinparam ComponentBorderColor #0f4c5c
+skinparam ComponentBackgroundColor #e6f0f2
+skinparam DatabaseBackgroundColor #fff8e1
+skinparam DatabaseBorderColor #b45309
+skinparam CloudBackgroundColor #f1f5f9
+skinparam CloudBorderColor #64748b
+
+title StudyHub — Architectural UML (hand-drawn view of our code)
+
+actor Student
+
+package "Browser" {
+  [React SPA\n(Vite)] as SPA
+}
+
+cloud "Network" {
+  () "REST / JSON\nover HTTPS" as API
+}
+
+package "Application server" {
+  [Express app\nserver/src/index.js] as Express
+  [Auth middleware] as Auth
+  [Route controllers\nroutes/*] as Routes
+  [Domain services\nservices/*] as Services
+}
+
+database "PostgreSQL" as DB
+cloud "SMTP email" as Mail
+
+Student --> SPA
+SPA --> API
+API --> Express
+Express --> Auth
+Auth --> Routes
+Routes --> Services
+Services --> DB
+Services --> Mail
+
+note right of SPA
+  View layer
+  pages, components, api.js
+end note
+
+note right of Routes
+  Controller layer
+  HTTP + auth + validation wiring
+end note
+
+note right of Services
+  Model / domain rules
+  shared with Cucumber where possible
+end note
+
+@enduml

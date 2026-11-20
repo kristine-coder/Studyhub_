@@ -1,0 +1,47 @@
+@startuml StudyHub MVC Overview
+!theme plain
+skinparam backgroundColor #FEFEFE
+skinparam packageStyle rectangle
+skinparam shadowing false
+skinparam defaultFontName Segoe UI
+
+title StudyHub — Section 5.1 MVC high-level diagram
+
+package "VIEW\nclient/" #E0F2FE {
+  [Landing / Login / Register] as PublicPages
+  [Dashboard / Courses / Groups] as AppPages
+  [GroupDetail\n(tasks, meetings, notes)] as GroupDetail
+  [Layout + AuthProvider] as Shell
+  [api.js fetch helper] as ApiClient
+}
+
+package "CONTROLLER\nserver/src/routes + middleware" #FEF3C7 {
+  [auth routes] as AuthCtrl
+  [courses / groups / tasks\nmeetings / notes / ...] as ResourceCtrl
+  [requireAuth middleware] as Mw
+}
+
+package "MODEL\nservices + PostgreSQL" #DCFCE7 {
+  [validateCreateTask\nmeeting helpers] as Domain
+  [db.js pool / SQL] as Persistence
+  database "PostgreSQL\nusers, groups, tasks, ..." as DB
+  [email service SMTP] as Email
+}
+
+Shell --> PublicPages
+Shell --> AppPages
+AppPages --> GroupDetail
+GroupDetail --> ApiClient
+PublicPages --> ApiClient
+
+ApiClient -[#0f4c5c]-> Mw : REST / JSON
+ApiClient -[#0f4c5c]-> AuthCtrl
+Mw --> ResourceCtrl
+AuthCtrl --> Persistence
+ResourceCtrl --> Domain
+ResourceCtrl --> Persistence
+Domain --> Persistence
+Persistence --> DB
+ResourceCtrl --> Email
+
+@enduml

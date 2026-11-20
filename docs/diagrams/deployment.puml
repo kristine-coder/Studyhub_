@@ -1,0 +1,52 @@
+@startuml StudyHub Deployment
+!theme plain
+skinparam backgroundColor #FEFEFE
+skinparam shadowing false
+skinparam defaultFontName Segoe UI
+skinparam node {
+  BackgroundColor #e6f0f2
+  BorderColor #0f4c5c
+}
+skinparam database {
+  BackgroundColor #fff8e1
+  BorderColor #b45309
+}
+
+title StudyHub — Section 7 Deployment diagram (UML)
+
+node "Student device" as Client {
+  artifact "React SPA\n(Vite build)" as Spa
+}
+
+node "App host\n(local: Node, later: cloud VM)" as AppHost {
+  artifact "Express API\nserver/" as Api
+}
+
+node "Data host\n(local: Docker Compose)" as DataHost {
+  database "PostgreSQL 16" as Pg
+}
+
+cloud "External SMTP" as Smtp {
+  artifact "Mail provider" as Mail
+}
+
+Spa -[#0f4c5c]-> Api : REST / JSON\nHTTPS (prod) / HTTP (dev)
+Api -[#0f4c5c]-> Pg : SQL\n(TCP 5432 / host 55432)
+Api -[#0f4c5c]-> Mail : SMTP
+
+note bottom of Client
+  Deployment node: browser
+  Artifact: static JS/CSS from client/
+end note
+
+note bottom of AppHost
+  Deployment node: application server
+  Controllers + services run here
+end note
+
+note bottom of DataHost
+  Deployment node: database server
+  Schema from db/migrations
+end note
+
+@enduml

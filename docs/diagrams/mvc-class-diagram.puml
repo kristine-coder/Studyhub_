@@ -1,0 +1,138 @@
+@startuml StudyHub MVC Class Diagram
+!theme plain
+skinparam backgroundColor #FEFEFE
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam defaultFontName Segoe UI
+skinparam packageStyle rectangle
+
+title StudyHub — Section 5.2 Class / module diagram (MVC marked)
+
+package "VIEW" #E0F2FE {
+  class App {
+    +routes()
+  }
+  class AuthProvider {
+    +user
+    +login()
+    +logout()
+  }
+  class GroupDetail {
+    +tasks
+    +meetings
+    +notes
+    +createTask()
+    +scheduleMeeting()
+  }
+  class Dashboard
+  class Courses
+  class api {
+    +get()
+    +post()
+    +patch()
+    +delete()
+  }
+  App --> AuthProvider
+  App --> GroupDetail
+  App --> Dashboard
+  App --> Courses
+  GroupDetail --> api
+  Dashboard --> api
+  Courses --> api
+  AuthProvider --> api
+}
+
+package "CONTROLLER" #FEF3C7 {
+  class ExpressApp {
+    +listen()
+  }
+  class AuthMiddleware {
+    +requireAuth()
+  }
+  class AuthRoutes {
+    +register()
+    +login()
+    +logout()
+    +me()
+  }
+  class TasksRoutes {
+    +list()
+    +create()
+    +update()
+    +remove()
+  }
+  class MeetingsRoutes {
+    +list()
+    +create()
+    +commonTimes()
+  }
+  class GroupsRoutes
+  class CoursesRoutes
+  ExpressApp --> AuthMiddleware
+  ExpressApp --> AuthRoutes
+  ExpressApp --> TasksRoutes
+  ExpressApp --> MeetingsRoutes
+  ExpressApp --> GroupsRoutes
+  ExpressApp --> CoursesRoutes
+  TasksRoutes ..> AuthMiddleware
+  MeetingsRoutes ..> AuthMiddleware
+}
+
+package "MODEL" #DCFCE7 {
+  class TaskService {
+    +validateCreateTask()
+    +STATUS
+  }
+  class MeetingService {
+    +common meeting helpers
+  }
+  class EmailService {
+    +sendEmail()
+  }
+  class DbPool {
+    +query()
+  }
+  class User <<entity>> {
+    id
+    name
+    email
+    password_hash
+  }
+  class Group <<entity>> {
+    id
+    name
+    owner_id
+  }
+  class Task <<entity>> {
+    id
+    group_id
+    title
+    due_date
+    status
+    assignee_id
+  }
+  class Meeting <<entity>> {
+    id
+    group_id
+    title
+    starts_at
+  }
+  TaskService --> Task
+  MeetingService --> Meeting
+  DbPool --> User
+  DbPool --> Group
+  DbPool --> Task
+  DbPool --> Meeting
+}
+
+api -[#0f4c5c]-> ExpressApp : HTTPS JSON
+TasksRoutes --> TaskService
+TasksRoutes --> DbPool
+TasksRoutes --> EmailService
+MeetingsRoutes --> MeetingService
+MeetingsRoutes --> DbPool
+AuthRoutes --> DbPool
+GroupsRoutes --> DbPool
+CoursesRoutes --> DbPool
+
+@enduml

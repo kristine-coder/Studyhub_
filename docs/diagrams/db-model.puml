@@ -1,0 +1,153 @@
+@startuml StudyHub DB Model
+!theme plain
+skinparam backgroundColor #FEFEFE
+skinparam linetype ortho
+skinparam shadowing false
+skinparam defaultFontName Segoe UI
+skinparam class {
+  BackgroundColor #FEFEFE
+  BorderColor #0f4c5c
+  HeaderBackgroundColor #e6f0f2
+}
+hide methods
+hide circle
+
+title StudyHub — Section 9 Database model (ER)
+
+entity "users" as users {
+  * id : UUID <<PK>>
+  --
+  * name : TEXT
+  * email : TEXT <<UQ>>
+  * password_hash : TEXT
+  * email_confirmed : BOOL
+  created_at
+  updated_at
+}
+
+entity "password_resets" as pr {
+  * id : UUID <<PK>>
+  --
+  * user_id : UUID <<FK>>
+  * token : TEXT
+  * expires_at
+  used_at
+}
+
+entity "notification_prefs" as np {
+  * user_id : UUID <<PK,FK>>
+  --
+  task_assigned
+  due_soon
+  meeting_updates
+}
+
+entity "courses" as courses {
+  * id : UUID <<PK>>
+  --
+  * user_id : UUID <<FK>>
+  * name
+  code
+}
+
+entity "deadlines" as deadlines {
+  * id : UUID <<PK>>
+  --
+  * course_id : UUID <<FK>>
+  * title
+  * due_date
+}
+
+entity "groups" as groups {
+  * id : UUID <<PK>>
+  --
+  * name
+  * owner_id : UUID <<FK>>
+  * invite_token
+}
+
+entity "group_members" as gm {
+  * group_id : UUID <<PK,FK>>
+  * user_id : UUID <<PK,FK>>
+  --
+  * role
+  joined_at
+}
+
+entity "invitations" as inv {
+  * id : UUID <<PK>>
+  --
+  * group_id : UUID <<FK>>
+  * email
+  * invited_by : UUID <<FK>>
+  * status
+}
+
+entity "tasks" as tasks {
+  * id : UUID <<PK>>
+  --
+  * group_id : UUID <<FK>>
+  * title
+  description
+  due_date
+  * status
+  assignee_id : UUID <<FK>>
+  * created_by : UUID <<FK>>
+}
+
+entity "availability_slots" as avail {
+  * id : UUID <<PK>>
+  --
+  * user_id : UUID <<FK>>
+  * slot_start
+  * slot_end
+  label
+}
+
+entity "meetings" as meetings {
+  * id : UUID <<PK>>
+  --
+  * group_id : UUID <<FK>>
+  * title
+  * starts_at
+  place_or_link
+  * created_by : UUID <<FK>>
+}
+
+entity "meeting_responses" as mr {
+  * meeting_id : UUID <<PK,FK>>
+  * user_id : UUID <<PK,FK>>
+  --
+  * response
+}
+
+entity "notes" as notes {
+  * id : UUID <<PK>>
+  --
+  * group_id : UUID <<FK>>
+  * title
+  body
+  * created_by : UUID <<FK>>
+  * updated_by : UUID <<FK>>
+}
+
+users ||--o{ pr
+users ||--|| np
+users ||--o{ courses
+courses ||--o{ deadlines
+users ||--o{ groups : owns
+users ||--o{ gm
+groups ||--o{ gm
+groups ||--o{ inv
+users ||--o{ inv
+groups ||--o{ tasks
+users ||--o{ tasks : assignee / creator
+users ||--o{ avail
+groups ||--o{ meetings
+users ||--o{ meetings : creator
+meetings ||--o{ mr
+users ||--o{ mr
+groups ||--o{ notes
+users ||--o{ notes
+
+@enduml
