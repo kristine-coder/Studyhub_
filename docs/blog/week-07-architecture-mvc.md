@@ -10,14 +10,10 @@ The filled document (online in the repo):
 ## Contents
 
 1. [Our chosen framework stack](#1-Our-chosen-framework-stack)
-2. [Does our stack generate simple CRUD and do we use that?](2#-Does-our-stack-generate-simple-CRUD--and-do-we-use-that?)
+2. [Does our stack generate simple CRUD and do we use that?](2#-Does-our-stack-generate-simple-CRUD-and-do-we-use-that?)
 3. [Screencasts (Cucumber / demo)](#3-Screencasts-(Cucumber-/-demo))
 4. [Architectural UML (hand-drawn) and overlay](#4-Architectural-UML-(hand-drawn)-and-overlay)
-7. [Integration with the IDE and GitHub](#7-Integration-with-the-IDE-and-GitHub)
-8. [Dashboard and reports](#8-Dashboard-and-reports)
-9. [Proof we follow the method](9#-Proof-we-follow-the-method)
-10. [What is not expected yet](10#-What-is-not-expected-yet)
-11. [What’s next](11#-What’s-next)
+
 
 ## 1\. Our chosen framework stack
 
