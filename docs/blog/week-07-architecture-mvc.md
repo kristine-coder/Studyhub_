@@ -7,6 +7,19 @@ Week 6 put StudyHub on YouTrack with RUP tags. This week we document the **Lifec
 The filled document (online in the repo):
 
 [StudyHub Software Architecture Document (RUP)](../architecture/rup-software-architecture.md)
+## Contents
+
+1. [Our chosen “framework” stack](#1-Our-chosen-“framework”-stack)
+2. [Our project managment tool youtrack](2#-Our-project-managment-tool-youtrack)
+3. [Combining Scrum with RUP](#3-Combining-Scrum-with-RUP)
+4. [Sprint naming and history](#4-Sprint-naming-and-history)
+5. [Elaboration 1 what is on the sprint](#5-Elaboration-1-what-is-on-the-sprint)
+6. [Time tracking](#6-Time-tracking)
+7. [Integration with the IDE and GitHub](#7-Integration-with-the-IDE-and-GitHub)
+8. [Dashboard and reports](#8-Dashboard-and-reports)
+9. [Proof we follow the method](9#-Proof-we-follow-the-method)
+10. [What is not expected yet](10#-What-is-not-expected-yet)
+11. [What’s next](11#-What’s-next)
 
 ## 1. Our chosen “framework” stack
 
