@@ -10,7 +10,7 @@ The filled document (online in the repo):
 ## Contents
 
 1. [Our chosen framework stack](#1-Our-chosen-framework-stack)
-2. [Our project managment tool youtrack](2#-Our-project-managment-tool-youtrack)
+2. [Does our stack generate simple CRUD — and do we use that?](2#-Does-our-stack-generate-simple-CRUD-—-and-do-we-use-that?)
 3. [Combining Scrum with RUP](#3-Combining-Scrum-with-RUP)
 4. [Sprint naming and history](#4-Sprint-naming-and-history)
 5. [Elaboration 1 what is on the sprint](#5-Elaboration-1-what-is-on-the-sprint)
@@ -33,7 +33,7 @@ The homework asks which framework we chose (Laravel, Django, Rails, Spring, …)
 
 That decision was already sketched in [Week 2](week-02-team-technology-setup.md). This week we treat it as the architecture we must prove, not only describe.
 
-## 2. Does our stack generate simple CRUD — and do we use that?
+## 2\. Does our stack generate simple CRUD — and do we use that?
 
 **No.** Express and React do **not** generate Create / Read / Update / Delete screens or controllers the way Rails scaffolds or Django admin can.
 
