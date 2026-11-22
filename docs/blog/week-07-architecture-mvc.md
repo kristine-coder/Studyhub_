@@ -121,4 +121,4 @@ Optional / N/A.
 
 ## Reflection on AI use
 
-We used Cursor AI to turn the course checklist into a StudyHub SAD and PlantUML diagrams that match the real folders (`client/`, `server/src/routes`, `services`, migrations). Stack choices, MVC mapping and which sections are N/A are team decisions grounded in the code we already run.
+For this weeks blog we used Cursor AI to turn the course checklist into a StudyHub SAD and PlantUML diagrams that match the real folders (`client/`, `server/src/routes`, `services`, migrations). Stack choices, MVC mapping and which sections are N/A are team decisions grounded in the code we already run.
