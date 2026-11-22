@@ -10,7 +10,7 @@ The filled document (online in the repo):
 ## Contents
 
 1. [Our chosen framework stack](#1-Our-chosen-framework-stack)
-2. [Does our stack generate simple CRUD — and do we use that?](2#-Does-our-stack-generate-simple-CRUD-—-and-do-we-use-that?)
+2. [Does our stack generate simple CRUD and do we use that?](2#-Does-our-stack-generate-simple-CRUD--and-do-we-use-that?)
 3. [Screencasts (Cucumber / demo)](#3-Screencasts-(Cucumber-/-demo))
 4. [Architectural UML (hand-drawn) and overlay](#4-Architectural-UML-(hand-drawn)-and-overlay)
 7. [Integration with the IDE and GitHub](#7-Integration-with-the-IDE-and-GitHub)
@@ -31,7 +31,7 @@ The homework asks which framework we chose (Laravel, Django, Rails, Spring, …)
 
 That decision was already sketched in [Week 2](week-02-team-technology-setup.md). This week we treat it as the architecture we must prove, not only describe.
 
-## 2\. Does our stack generate simple CRUD — and do we use that?
+## 2\. Does our stack generate simple CRUD and do we use that?
 
 **No.** Express and React do **not** generate Create / Read / Update / Delete screens or controllers the way Rails scaffolds or Django admin can.
 
