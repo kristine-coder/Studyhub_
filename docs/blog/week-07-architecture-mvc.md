@@ -11,9 +11,7 @@ The filled document (online in the repo):
 
 1. [Our chosen framework stack](#1-Our-chosen-framework-stack)
 2. [Does our stack generate simple CRUD — and do we use that?](2#-Does-our-stack-generate-simple-CRUD-—-and-do-we-use-that?)
-3. [Combining Scrum with RUP](#3-Combining-Scrum-with-RUP)
-4. [Sprint naming and history](#4-Sprint-naming-and-history)
-5. [Elaboration 1 what is on the sprint](#5-Elaboration-1-what-is-on-the-sprint)
+3-5 . [Screencasts (Cucumber / demo)](#3-Screencasts-(Cucumber-/-demo))
 6. [Time tracking](#6-Time-tracking)
 7. [Integration with the IDE and GitHub](#7-Integration-with-the-IDE-and-GitHub)
 8. [Dashboard and reports](#8-Dashboard-and-reports)
@@ -45,7 +43,7 @@ We write CRUD ourselves:
 
 We are fine with that. Our Cucumber scenarios already encode the rules for *Create a task* and *Schedule meeting*; generated admin CRUD would not reuse those rules.
 
-## 3–5. Screencasts (Cucumber / demo)
+## 3–5\. Screencasts (Cucumber / demo)
 
 - **Cucumber running:** already on the blog in [Week 5](week-05-testing-with-cucumber.md) (feature files + CI). If the lecturer wants a fresh short screencast, we re-record `npm test` into the test blog.
 - **First demo / live feature tests:** optional this week; we show the app and/or Cucumber live online when asked and link the film here when we have it.
