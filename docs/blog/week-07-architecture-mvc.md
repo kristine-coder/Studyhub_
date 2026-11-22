@@ -21,7 +21,7 @@ The filled document (online in the repo):
 10. [What is not expected yet](10#-What-is-not-expected-yet)
 11. [What’s next](11#-What’s-next)
 
-## 1. Our chosen “framework” stack
+## 1 \. Our chosen “framework” stack
 
 The homework asks which framework we chose (Laravel, Django, Rails, Spring, …). StudyHub is not built on one of those full-stack MVC frameworks. We chose a small JavaScript stack that the whole team can read and that already matches our Cucumber tests:
 
