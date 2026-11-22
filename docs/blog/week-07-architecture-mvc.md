@@ -11,8 +11,8 @@ The filled document (online in the repo):
 
 1. [Our chosen framework stack](#1-Our-chosen-framework-stack)
 2. [Does our stack generate simple CRUD — and do we use that?](2#-Does-our-stack-generate-simple-CRUD-—-and-do-we-use-that?)
-3-5 . [Screencasts (Cucumber / demo)](#3-Screencasts-(Cucumber-/-demo))
-6. [Time tracking](#6-Time-tracking)
+3. [Screencasts (Cucumber / demo)](#3-Screencasts-(Cucumber-/-demo))
+4. [Architectural UML (hand-drawn) and overlay](#4-Architectural-UML-(hand-drawn)-and-overlay)
 7. [Integration with the IDE and GitHub](#7-Integration-with-the-IDE-and-GitHub)
 8. [Dashboard and reports](#8-Dashboard-and-reports)
 9. [Proof we follow the method](9#-Proof-we-follow-the-method)
@@ -43,12 +43,12 @@ We write CRUD ourselves:
 
 We are fine with that. Our Cucumber scenarios already encode the rules for *Create a task* and *Schedule meeting*; generated admin CRUD would not reuse those rules.
 
-## 3–5\. Screencasts (Cucumber / demo)
+## 3\. Screencasts (Cucumber / demo)
 
 - **Cucumber running:** already on the blog in [Week 5](week-05-testing-with-cucumber.md) (feature files + CI). If the lecturer wants a fresh short screencast, we re-record `npm test` into the test blog.
 - **First demo / live feature tests:** optional this week; we show the app and/or Cucumber live online when asked and link the film here when we have it.
 
-## 6–7. Architectural UML (hand-drawn) and overlay
+## 4\. Architectural UML (hand-drawn) and overlay
 
 We drew an architectural UML of **our** code (browser SPA, Express, services, PostgreSQL, SMTP):
 
