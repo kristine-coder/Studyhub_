@@ -9,6 +9,7 @@ The filled document (online in the repo):
 [StudyHub Software Architecture Document (RUP)](../architecture/rup-software-architecture.md)
 
 ~ [Our chosen framework stack](#1-Our-chosen-framework-stack)
+
 ~ [Does our stack generate simple CRUD and do we use that?](#2-Does-our-stack-generate-simple-CRUD-and-do-we-use-that?)
 
 ## 1\. Our chosen framework stack
