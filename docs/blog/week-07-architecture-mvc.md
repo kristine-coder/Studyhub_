@@ -8,7 +8,10 @@ The filled document (online in the repo):
 
 [StudyHub Software Architecture Document (RUP)](../architecture/rup-software-architecture.md)
 
-## 1. Our chosen “framework” stack
+~ [Our chosen framework stack](#1-Our-chosen-framework-stack)
+~ [Does our stack generate simple CRUD and do we use that?](#2-Does-our-stack-generate-simple-CRUD-and-do-we-use-that?)
+
+## 1\. Our chosen framework stack
 
 The homework asks which framework we chose (Laravel, Django, Rails, Spring, …). StudyHub is not built on one of those full-stack MVC frameworks. We chose a small JavaScript stack that the whole team can read and that already matches our Cucumber tests:
 
@@ -20,7 +23,7 @@ The homework asks which framework we chose (Laravel, Django, Rails, Spring, …)
 
 That decision was already sketched in [Week 2](week-02-team-technology-setup.md). This week we treat it as the architecture we must prove, not only describe.
 
-## 2. Does our stack generate simple CRUD — and do we use that?
+## 2\. Does our stack generate simple CRUD and do we use that?
 
 **No.** Express and React do **not** generate Create / Read / Update / Delete screens or controllers the way Rails scaffolds or Django admin can.
 
