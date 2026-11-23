@@ -13,6 +13,7 @@ The filled document (online in the repo):
 2. [Does our stack generate simple CRUD and do we use that?](2#-Does-our-stack-generate-simple-CRUD-and-do-we-use-that?)
 3. [Screencasts (Cucumber / demo)](#3-Screencasts-(Cucumber-/-demo))
 4. [Architectural UML (hand-drawn) and overlay](#4-Architectural-UML-(hand-drawn)-and-overlay)
+5. [RUP architecture document filled and online](5#-RUP-architecture-document-filled-and-online)
 
 
 ## 1\. Our chosen framework stack
@@ -57,7 +58,7 @@ We drew an architectural UML of **our** code (browser SPA, Express, services, Po
 
 > **Team action:** export the IDE auto-UML screenshot and add `docs/diagrams/ide-generated-uml.png`, then a combined overlay image if the course expects one file.
 
-## 8. RUP architecture document — filled and online
+## 5\. RUP architecture document filled and online
 
 Sections below follow the course checklist. Full prose lives in the [SAD](../architecture/rup-software-architecture.md).
 
