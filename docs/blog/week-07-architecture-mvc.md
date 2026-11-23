@@ -7,16 +7,8 @@ Week 6 put StudyHub on YouTrack with RUP tags. This week we document the **Lifec
 The filled document (online in the repo):
 
 [StudyHub Software Architecture Document (RUP)](../architecture/rup-software-architecture.md)
-## Contents
 
-1. [Our chosen framework stack](#1-Our-chosen-framework-stack)
-2. [Does our stack generate simple CRUD and do we use that?](2#-Does-our-stack-generate-simple-CRUD-and-do-we-use-that?)
-3. [Screencasts (Cucumber / demo)](#3-Screencasts-(Cucumber-/-demo))
-4. [Architectural UML (hand-drawn) and overlay](#4-Architectural-UML-(hand-drawn)-and-overlay)
-5. [RUP architecture document filled and online](5#-RUP-architecture-document-filled-and-online)
-
-
-## 1\. Our chosen framework stack
+## 1. Our chosen “framework” stack
 
 The homework asks which framework we chose (Laravel, Django, Rails, Spring, …). StudyHub is not built on one of those full-stack MVC frameworks. We chose a small JavaScript stack that the whole team can read and that already matches our Cucumber tests:
 
@@ -28,7 +20,7 @@ The homework asks which framework we chose (Laravel, Django, Rails, Spring, …)
 
 That decision was already sketched in [Week 2](week-02-team-technology-setup.md). This week we treat it as the architecture we must prove, not only describe.
 
-## 2\. Does our stack generate simple CRUD and do we use that?
+## 2. Does our stack generate simple CRUD — and do we use that?
 
 **No.** Express and React do **not** generate Create / Read / Update / Delete screens or controllers the way Rails scaffolds or Django admin can.
 
@@ -40,12 +32,12 @@ We write CRUD ourselves:
 
 We are fine with that. Our Cucumber scenarios already encode the rules for *Create a task* and *Schedule meeting*; generated admin CRUD would not reuse those rules.
 
-## 3\. Screencasts (Cucumber / demo)
+## 3–5. Screencasts (Cucumber / demo)
 
 - **Cucumber running:** already on the blog in [Week 5](week-05-testing-with-cucumber.md) (feature files + CI). If the lecturer wants a fresh short screencast, we re-record `npm test` into the test blog.
 - **First demo / live feature tests:** optional this week; we show the app and/or Cucumber live online when asked and link the film here when we have it.
 
-## 4\. Architectural UML (hand-drawn) and overlay
+## 6–7. Architectural UML (hand-drawn) and overlay
 
 We drew an architectural UML of **our** code (browser SPA, Express, services, PostgreSQL, SMTP):
 
@@ -58,7 +50,7 @@ We drew an architectural UML of **our** code (browser SPA, Express, services, Po
 
 > **Team action:** export the IDE auto-UML screenshot and add `docs/diagrams/ide-generated-uml.png`, then a combined overlay image if the course expects one file.
 
-## 5\. RUP architecture document filled and online
+## 8. RUP architecture document — filled and online
 
 Sections below follow the course checklist. Full prose lives in the [SAD](../architecture/rup-software-architecture.md).
 
