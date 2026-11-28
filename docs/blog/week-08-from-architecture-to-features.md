@@ -117,7 +117,7 @@ Choosing Express was only half the decision. The other half is **how** we use it
 
 ## Reflection on AI use
 
-We used Cursor AI to compare other teams’ Week 8 posts with our Week 7 hand-in and to draft this “architecture → feature” outline. The choice to deepen task CRUD instead of rewriting the SAD, and the membership / validation examples, are team decisions grounded in `server/src/routes/tasks.js` and our Cucumber scenarios.
+For this weeks we used Cursor AI to compare other teams’ Week 8 posts with our Week 7 hand-in and to draft this “architecture → feature” outline. The choice to deepen task CRUD instead of rewriting the SAD, and the membership / validation examples, are team decisions grounded in `server/src/routes/tasks.js` and our Cucumber scenarios.
 
 ---
 
